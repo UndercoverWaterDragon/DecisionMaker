@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--Stylesheets-->		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link href="CSS_File.css" media="screen" rel="Stylesheet" type="text/css">
+
+		<!--Imports-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<!--Additional Head Data-->
+		<title>Decisions</title>
+	</head>
+	
+	<body onKeyPress="return keyPressed(event)">
+		<header>
+			<div class="headImage">
+				<div class="headText">
+					<h1>Decision Maker</h1>
+				</div>
+			</div>
+		</header>
+
+		<div class="topnav">
+			<a href="home.html">Home</a>
+			<a href="decisionMaker.html">Decision Maker</a>
+			<a href="#">Mood Meme</a>
+		</div>
+
+		<div class="askQuestion" id="askQuestion">
+			<div class="questionText">
+				<h2>What would you like to do?</h2>
+				<form>
+					<input type="text" id="question" name="question"><br><br>
+					<input type="button" class="btn btn-light" value="Decide for Me" onclick="generate()"> 
+				</form>
+				</div>
+		</div>
+		<div class="answerImage" id="answerImage" style="display:none;">
+			<div class="answerText">
+				<h2>Should you do it?</h2>
+				<h3 id="printQuestion"></h3>
+				<h3 id="printAnswer"></h3>
+			</div>
+		</div>
+
+		<script>
+			function keyPressed(e) {
+			     var key;      
+			     if(window.event)
+			          key = window.event.keyCode; //IE
+			     else
+			          key = e.which; //firefox      
+
+			     return (key != 13);
+			}
+			function generate() {
+				var questionAsked = document.getElementById("question").value;
+
+				var answerArray = ["Yes","No","Yeah","Nah","Absolutely","Do you want to die?","Yay","Nay","Affirmative","Negative","Yep","Nope","Live a little","You've had enough fun today","You've earnt this","Don't you have work to do?","Accepable","Denied","Ya-ha","Nah-ah"];
+				var randomAnswer = randomElement = answerArray[Math.floor(Math.random() * answerArray.length)];
+				document.getElementById('answerImage').style.display = "block";
+				document.getElementById("printQuestion").innerHTML = questionAsked;
+				document.getElementById("printAnswer").innerHTML = randomAnswer;
+			}
+
+		</script>
+		<?php $("form").keypress(function(e) {
+			//Enter key
+			if (e.which == 13) {
+				return false;
+			}
+		});>
+	</body>
+</html>
