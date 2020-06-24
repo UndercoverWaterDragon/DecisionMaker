@@ -28,12 +28,17 @@
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(images/dianthus-floral-wallpaper-loganberry-300110-p6226-18000_image.jpg);
+    background-image: url(images/Joey_Birbs.jpg);
 }
 h1 {
 	margin: auto;
-	padding: 60px 0;
-	font-size: 50px;
+	padding: 5% 0;
+  font-size: calc(40px + (50 - 40) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+	/*font-size: 50px;*/
+}
+h6 {
+  font-size: calc(30px + (40p - 30) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+  /*font-size: 40px;*/
 }
 
 body{
@@ -41,7 +46,7 @@ body{
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(images/flower-3316681_1920.jpg);
+    background-image: url(images/Joey_Guy.jpg);
 }
 
 .questionText {
