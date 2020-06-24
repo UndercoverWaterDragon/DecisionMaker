@@ -35,10 +35,8 @@
 		<div class="askQuestion" id="askQuestion">
 			<div class="questionText">
 				<h2>What would you like to do?</h2>
-				<form>
-					<input type="text" id="question" name="question"></text><br><br>
-					<input type="button" class="btn btn-dark" value="Decide for Me" onclick="generate()"> </button>
-				</form>
+				<input type="text" id="question" name="question" value=""><br><br>
+				<input type="button" class="btn btn-dark" id="subBtn" value="Decide for Me" onclick="generate()">
 				</div>
 		</div>
 		<div class="answerImage" id="answerImage" style="display:none;">
@@ -50,15 +48,16 @@
 		</div>
 
 		<script>
-			function keyPressed(e) {
-			     var key;      
-			     if(window.event)
-			          key = window.event.keyCode; //IE
-			     else
-			          key = e.which; //firefox      
+			//Submit form using Enter Key
+			var input = document.getElementById("question");
+			input.addEventListener("keyup", function(event) {
+			    if (event.keyCode === 13 || event.which == 13) {
+			        generate()
+			        event.preventDefault();
+			    }
+			});
 
-			     return (key != 13);
-			}
+			// Generate Answer
 			function generate() {
 				var questionAsked = document.getElementById("question").value;
 
@@ -70,11 +69,5 @@
 			}
 
 		</script>
-		<?php $("form").keypress(function(e) {
-			//Enter key
-			if (e.which == 13) {
-				return false;
-			}
-		});>
 	</body>
 </html>
