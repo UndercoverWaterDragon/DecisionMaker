@@ -10,7 +10,6 @@
   text-decoration: none;
   font-size: 17px;
 }
-$enable-responsive-font-sizes
 .topnav a:hover {
   background-color: #ddd;
   color: black;
@@ -28,7 +27,7 @@ $enable-responsive-font-sizes
     height: calc(100px + (150 - 100) * ((100vw - 300px)/(1600 - 300)));
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(images/Joey_Birbs.jpg);
+    background-image: url(images/Sunset.jpg);
 }
 h1 {
 	margin: auto;
@@ -38,12 +37,13 @@ h6 {
   font-size: calc(30px + (40 - 30) * ((100vw - 300px)/(1600 - 300)));
 }
 
+/*Config Body Elements*/
 body{
 	background-attachment: fixed;
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(images/Joey_Guy.jpg);
+    background-image: url(images/leaf_watercolour.jpg);
 }
 
 .questionText {
@@ -59,7 +59,6 @@ body{
     background-size: cover;
 }
 
-
 .answerText {
     height: 200px;
     text-align: center;
@@ -71,5 +70,14 @@ body{
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(images/dianthus-floral-wallpaper-loganberry-300110-p6226-18000_image.jpg);
+    background-image: url(images/Sunset.jpg);
+}
+
+
+/*Config Fonts*/
+h2 {
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px)/(1600 - 300)));
+}
+h3 {
+  font-size: calc(20px + (30 - 20) * ((100vw - 300px)/(1600 - 300)));
 }
