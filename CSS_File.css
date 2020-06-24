@@ -17,22 +17,22 @@
 
 /*Header*/
 .headText {
-    height: calc(100px + (150 - 100) * ((100vw - 300px)/(1600 - 300)));
-    text-align: center;
-    padding: 5px;
-    background: rgba(255, 255, 255, 0.5);
+  height: calc(100px + (150 - 100) * ((100vw - 300px)/(1600 - 300)));
+  text-align: center;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
 }
 .headImage {
-    background-attachment: fixed;
-    height: calc(100px + (150 - 100) * ((100vw - 300px)/(1600 - 300)));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(images/Sunset.jpg);
+  background-attachment: fixed;
+  height: calc(100px + (150 - 100) * ((100vw - 300px)/(1600 - 300)));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/Sunset.jpg);
 }
 h1 {
-	margin: auto;
   font-size: calc(40px + (50 - 40) * ((100vw - 300px)/(1600 - 300)));
 }
+
 h6 {
   font-size: calc(30px + (40 - 30) * ((100vw - 300px)/(1600 - 300)));
 }
@@ -40,37 +40,37 @@ h6 {
 /*Config Body Elements*/
 body{
 	background-attachment: fixed;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(images/leaf_watercolour.jpg);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/leaf_watercolour.jpg);
 }
 
 .questionText {
-    height: 200px;
-    text-align: center;
-    padding: 5px;
-    background: rgba(255, 255, 255, 0.5);
+  height: 200px;
+  text-align: center;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
 }
 .askQuestion {
 	background-attachment: fixed;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .answerText {
-    height: 200px;
-    text-align: center;
-    padding: 5px;
-    background: rgba(255, 255, 255, 0.5);
+  height: auto;
+  text-align: center;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
 }
 .answerImage {
 	background-attachment: fixed;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(images/Sunset.jpg);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(images/Sunset.jpg);
 }
 
 
@@ -80,4 +80,10 @@ h2 {
 }
 h3 {
   font-size: calc(20px + (30 - 20) * ((100vw - 300px)/(1600 - 300)));
+}
+
+/*Config Div Line*/
+hr.answerBreak {
+  width: 80%;
+  border-top: 2px solid #333;
 }
