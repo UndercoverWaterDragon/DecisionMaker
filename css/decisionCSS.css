@@ -1,0 +1,41 @@
+/*Config Body Elements*/
+.questionText {
+  height: 200px;
+  text-align: center;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.askQuestion {
+	background-attachment: fixed;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.answerText {
+  height: auto;
+  text-align: center;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.answerImage {
+	background-attachment: fixed;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/Sunset.jpg);
+}
+
+/*Config Fonts*/
+h2 {
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px)/(1600 - 300)));
+}
+h3 {
+  font-size: calc(20px + (30 - 20) * ((100vw - 300px)/(1600 - 300)));
+}
+
+/*Config Div Line*/
+hr.answerBreak {
+  width: 80%;
+  border-top: 2px solid #333;
+}

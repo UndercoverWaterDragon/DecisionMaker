@@ -1,0 +1,29 @@
+/*Header*/
+.headText {
+  height: calc(150px + (150 - 100) * ((100vw - 300px)/(1600 - 300)));
+  text-align: center;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.headImage {
+  background-attachment: fixed;
+  height: calc(150px + (150 - 100) * ((100vw - 300px)/(1600 - 300)));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/Sunset.jpg);
+}
+h1 {
+  font-size: calc(40px + (50 - 40) * ((100vw - 300px)/(1600 - 300)));
+}
+
+h6 {
+  font-size: calc(30px + (40 - 30) * ((100vw - 300px)/(1600 - 300)));
+}
+
+body{
+  background-attachment: fixed;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/leaf_watercolour.jpg);
+}

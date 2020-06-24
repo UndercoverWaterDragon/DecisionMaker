@@ -13,14 +13,20 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-		<!--Personal-->
-		<link href="CSS_File.css" media="screen" rel="Stylesheet" type="text/css">
+		<!--JavaScript-->
+		<script type="text/javascript" src="js/navbar.js"></script>
+
+		<!--Personal Stylesheet-->
+		<link href="css/navbar.css" media="screen" rel="Stylesheet" type="text/css">
+		<link href="css/universalCSS.css" media="screen" rel="Stylesheet" type="text/css">
+		<link href="css/decisionCSS.css" media="screen" rel="Stylesheet" type="text/css">
 
 		<!--Additional Head Data-->
 		<title>Decisions</title>
 	</head>
 	
 	<body onKeyPress="return keyPressed(event)">
+	<!--Head Image-->
 		<header>
 			<div class="headImage">
 				<div class="headText">
@@ -29,13 +35,17 @@
 				</div>
 			</div>
 		</header>
-
+	<!--Navbar-->
 		<div class="topnav">
 			<a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-			<a href="decisionMaker.html"><i class="fas fa-check-square"></i> Decision Maker</a>
+			<a href="decisionMaker.html" class="active"><i class="fas fa-check-square"></i> Decision Maker</a>
 			<a href="#"><i class="fas fa-lemon"></i> Mood Meme</a>
+			<a href="javascript:void(0);" class="icon" onclick="dropNav()">
+				<i class="fa fa-bars"></i>
+			</a>
 		</div>	
-
+		<script src="/js/navbar.js"></script>
+	<!--Question Section-->
 		<div class="askQuestion" id="askQuestion">
 			<div class="questionText">
 				<h2>What would you like to do?</h2>
@@ -43,6 +53,7 @@
 				<input type="button" class="btn btn-info" id="subBtn" value="Decide for Me" onclick="generate()">
 			</div>
 		</div>
+	<!--Answer Section-->
 		<div class="answerImage" id="answerImage" style="display:none;">
 			<div class="answerText">
 				<h3 id="printQuestion"></h3>
@@ -51,7 +62,7 @@
 				<h3 id="printAnswer"></h3>
 			</div>
 		</div>
-
+	<!--Java Script for Question to Print Answer-->
 		<script>
 			//Submit form using Enter Key
 			var input = document.getElementById("question");
@@ -72,7 +83,6 @@
 				document.getElementById("printQuestion").innerHTML = questionAsked;
 				document.getElementById("printAnswer").innerHTML = randomAnswer;
 			}
-
 		</script>
 	</body>
 </html>
